@@ -1,0 +1,42 @@
+#Skills {
+  background-color: #{$white-color};
+  color: #{$dark-blue-text};
+  text-align: center; /* Centers the title and content */
+  margin-top: -10rem;
+  padding-top: 15rem;
+
+  .row {
+    justify-content: center; /* Centers the row content */
+    .col-lg-4 {
+      .skill-wrapper__text {
+        &.load-hidden {
+          .skill-wrapper__text-title {
+            font-weight: bold;
+            margin-bottom: 1.8rem;
+            
+          }
+          div {
+            ul.mb-4 {
+              list-style-type: none; /* Removes bullet points */
+              padding: 0; /* Removes default padding */
+              
+              li {
+                
+                line-height: 1.5;
+                margin-bottom: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Additional styles for alignment */
+#Skills ul.mb-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns items to the center of the flex container */
+}
+

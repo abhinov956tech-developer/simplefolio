@@ -1,0 +1,41 @@
+#Experience {
+  .container {
+    .experience-wrapper {
+      .section-title {
+        color: darkblue;
+      }
+      .row {
+        .col-lg-4 {
+          display: flex; /* Enables Flexbox */
+          justify-content: center; /* Center horizontally */
+          align-items: center; /* Center vertically */
+          .experience-wrapper__text {
+            margin-left: 20px;
+            
+            
+            h3 {
+              &.experience-wrapper__text-title {
+                font-weight: bold;
+              }
+            }
+            h4 {
+              &.experience-wrapper__text-title {
+                font-weight: bold;
+                
+              }
+            }
+            p {
+              &.mb-4 {
+                margin-bottom: 1rem;
+                
+              }
+            }
+            h5 {
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
