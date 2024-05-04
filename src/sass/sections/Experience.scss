@@ -1,5 +1,5 @@
+
 #Experience {
-  
   background-color: $primary-color;
   background-image: linear-gradient(
     135deg,
@@ -11,10 +11,9 @@
   height: 100%;
   border-top: 0px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 0 95%);
   padding-bottom: 10%;
   
-
   @include respond(tab-land) {
     height: 100%;
     -webkit-clip-path: none;
@@ -24,8 +23,50 @@
   .experience-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;
-      
-      
+       
     }
   }
+  .experience-wrapper__text-title1{
+    align-items: flex-start;
+    text-align: left;
+    font-weight: bolder;
+    color: black;
+    justify-content: flex-start;
+   
+  }
+  
+  .experience-wrapper__text-title2{
+    align-items: flex-start;
+    text-align: right;
+    font-weight: bolder;
+    color: black;
+  }
+  .experience-wrapper__text-title3{
+    align-items: flex-start;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+  }
+}
+
+.card {
+  margin-left:1rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Shadow effect */
+  transition: 0.3s; /* Animation for hover effect */
+}
+
+.card:hover {
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2); /* Deeper shadow on hover */
+}
+
+.card-body {
+  padding: 15px; /* More padding */
+  border-radius: 15px; /* Rounded corners */
+}
+.mb-3
+{
+  margin-bottom: 2rem !important;
+}
+h3{
+  text-align: justify;
 }
